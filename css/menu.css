@@ -1,0 +1,134 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family:  sans-serif;
+	background: #636363;
+}
+
+.contenido{
+	width: 100%;
+	max-width: 1000px;
+	background: seagreen;
+	margin: auto;
+	margin-top: 80px;
+	border: 3px solid black;
+}
+
+header{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: seagreen;
+
+}
+
+#check{
+	display: none;
+}
+
+#check:checked ~ .menu{
+	width: 400px;
+}
+
+.menu{
+	position: fixed;
+	top: 60px;
+	width: 0px;
+	height: 100vh;
+	background: seagreen;
+	transition: all 300ms;
+	overflow: hidden;
+}
+.menu ul li{
+	list-style: none;
+	padding: 16px;
+	color: #fff;
+	cursor: pointer;
+	transition: all 300ms;
+	display: block;
+	width: 200px;
+}
+.menu ul li:hover{
+	background: rgba(0,0,0,0.2);
+}
+
+.menu > ul li{
+    float: left;
+}
+
+.menu ul li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+}
+
+.menu ul li ul li{
+    position: relative;
+	right: -10px;
+	width: 300px;
+    top: 0px;
+}
+
+.menu ul li ul li ul{
+    right: -140px;
+    top: 0px;
+}
+
+.menu a{
+	text-decoration: none;
+	font-size: 17px;
+	line-height: 20px;
+	color: #fff;
+}
+
+.contenido label{
+	position: fixed;
+	width: 100%;
+	max-width: 1000px;
+	top: 14px;
+	font-size: 26px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.contenido h1{
+	position: fixed;
+	width: 100%;
+	max-width: 1000px;
+	top: 7px;
+	font-size: 15px;
+	text-align: right;
+	color: #fff;
+}
+
+.contenido form{
+	background: #fff;
+}
+
+.contenido table{
+	background-color: #fff; 
+	text-align: left;
+	width: 50%
+}
+
+.contenido th,td{
+	padding: 10px;
+}
+
+.contenido th{
+	background-color: seagreen;
+	border-bottom: solid 5px #000000;
+	color: #fff;
+}
+
+.contenido tr:nth-child(even){
+	background-color: #ddd;
+}
+

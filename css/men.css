@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu{
+    margin: auto;
+    width: 400px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.nav li a{
+    background-color: seagreen;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+    color: white;
+}
+
+.nav li ul li a{
+    background-color: rgb(11, 43, 148);
+}
+
+.nav li ul li ul a{
+    background-color: rgb(13, 95, 172);
+}
+
+.nav li a:hover{
+    background-color: #9c9999;
+}
+
+.nav > li{
+    float: left;
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 200px;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+.nav li ul li{
+    position: relative;
+    top: 0px;
+}
+
+.nav li ul li ul{
+    position: relative;
+    top: 0px;
+
+}
+
+
